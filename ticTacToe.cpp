@@ -48,7 +48,7 @@ void myMove() {
 
     cout << "\nPick a row (1-3): ";
     cin >> row; // the next line is why I'm the greatest programmer of all time
-    while(cin.fail() || rowValidator(row-1) || std::find(validInput, validInput + 3, row) == validInput + 3) {
+    while(!cin || rowValidator(row-1) || std::find(validInput, validInput + 3, row) == validInput + 3) {
         cout << "\nInvalid input.\n";
         cin.clear();
         cin.ignore(2000, '\n');
@@ -58,7 +58,7 @@ void myMove() {
 
     cout << "Pick a column (1-3): ";
     cin >> col;
-    while(cin.fail() || !validityCheck(row, col) || std::find(validInput, validInput + 3, col) == validInput + 3) {
+    while(!cin || !validityCheck(row, col) || std::find(validInput, validInput + 3, col) == validInput + 3) {
         cout << "\nInvalid input.\n";
         cin.clear();
         cin.ignore(2000, '\n');
