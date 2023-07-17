@@ -107,7 +107,7 @@ int gameEnd() {
             }
         }
     }
-    // diagonal 1
+    // diag 1
     if(gameState[0][0] == gameState[1][1] && gameState[0][0] == gameState[2][2]) {
         if(gameState[0][0] == 1) {
             return 1;
@@ -115,7 +115,7 @@ int gameEnd() {
             return 2;
         }
     }
-    // diagonal 2
+    // diag 2
     if(gameState[0][2] == gameState[1][1] && gameState[0][2] == gameState[2][0]) {
         if(gameState[0][2] == 1) {
             return 1;
