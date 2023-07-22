@@ -1,7 +1,7 @@
-CC = g++
-CFLAGS = -Wall 
+CXX = g++
+CXXFLAGS = -Wall 
 
 all: main
 
 main: ticTacToe.cpp ticTacToe.o
-	$(CC) $(CFLAGS) ticTacToe.cpp -o ticTacToe.exe
+	$(CXX) $(CXXFLAGS) ticTacToe.cpp -o ticTacToe.exe
